@@ -1,0 +1,7 @@
+game.Players.PlayerAdded:Connect(function(player)
+	player.CharacterAdded:Connect(function(char)
+		local humanoid = char:WaitForChild("Humanoid")
+		humanoid.WalkSpeed = 16  -- default Roblox speed
+		humanoid.JumpPower = 50  -- default jump
+	end)
+end)
